@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Minecraft2D
-{
+{ 
+    /// <summary>
+    /// Это класс блоков
+    /// </summary>
     public class Tile
     {
-        public string Block {  get; set; }
+        public string Block { get; set; }
         public Tile(string block, int x, int y)
         {
             if (block == "water")
@@ -25,7 +28,7 @@ namespace Minecraft2D
             else
             {
                 Block = "void";
-            }  
+            }
         }
     }
 }
