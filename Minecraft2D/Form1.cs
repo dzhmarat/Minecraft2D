@@ -14,7 +14,11 @@ namespace Minecraft2D
                 }
             }
         }
-
+        /// <summary>
+        /// Открывает меню
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Create_Click(object sender, EventArgs e)
         {
             if (CreateMenu.Visible)
@@ -26,6 +30,10 @@ namespace Minecraft2D
                 CreateMenu.Visible = true;
             }
         }
+        /// <summary>
+        /// Рисует блоки
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -51,7 +59,11 @@ namespace Minecraft2D
                 }
             }
         }
-
+        /// <summary>
+        /// При клике на создать внутри меню
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TrueCreate_Click(object sender, EventArgs e)
         {
             int x = int.Parse(TextX.Text);
